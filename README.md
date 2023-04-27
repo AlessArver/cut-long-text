@@ -2,7 +2,6 @@
 
 <h3>How to setup?</h3>
 <ul>
-  <li>Clone & launch this project: https://github.com/AlessArver/social-network-backend-nestjs</li>
   <li>yarn or npm i</li>
-  <li>yarn start</li>
+  <li>yarn start or npm run start</li>
 </ul>
