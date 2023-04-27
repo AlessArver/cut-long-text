@@ -11,13 +11,21 @@
         "airbnb-typescript/base",
 		"prettier"
     ],
-    "overrides": [
-    ],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
-        "project": "./tsconfig.json",
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "project": ["tsconfig.json"],
         "ecmaVersion": "latest",
         "sourceType": "module"
+    },
+    "settings": {
+        "import/resolver": {
+            "typescript": {
+                "alwaysTryTypes": true
+            }
+        }
     },
     "plugins": [
         "import",
@@ -30,6 +38,16 @@
         "no-console": "warn",
         "quotes": ["error", "single"],
         "jsx-quotes": ["error", "prefer-single"],
-        "no-useless-escape": 0
+        "no-useless-escape": 0,
+        "import/extensions": [
+            "error",
+            "ignorePackages",
+            {
+              "js": "never",
+              "jsx": "never",
+              "ts": "never",
+              "tsx": "never"
+            }
+         ]
       }
 }
