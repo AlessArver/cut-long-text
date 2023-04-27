@@ -1,0 +1,35 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:import/recommended",
+        "plugin:react/recommended",
+        "plugin:@typescript-eslint/recommended",
+        "airbnb-typescript/base",
+		"prettier"
+    ],
+    "overrides": [
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "project": "./tsconfig.json",
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "plugins": [
+        "import",
+        "prettier",
+        "react",
+		"react-hooks",
+        "@typescript-eslint"
+    ],
+    "rules": {
+        "no-console": "warn",
+        "quotes": ["error", "single"],
+        "jsx-quotes": ["error", "prefer-single"],
+        "no-useless-escape": 0
+      }
+}
